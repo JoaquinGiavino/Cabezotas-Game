@@ -1,7 +1,7 @@
 [gd_scene load_steps=6 format=3 uid="uid://03t7scijjfpj"]
 
 [ext_resource type="Texture2D" uid="uid://db7bov8g4cngv" path="res://Cabezones/assets/sprites/player01.png" id="1_avpci"]
-[ext_resource type="Script" uid="uid://bpwlxm45inrwi" path="res://Cabezones/scenes/entities/player_01.gd" id="1_ka2n0"]
+[ext_resource type="Script" uid="uid://bpwlxm45inrwi" path="res://Cabezones/scripts/player_01.gd" id="1_ka2n0"]
 [ext_resource type="Texture2D" uid="uid://jqqc2jtxo027" path="res://Cabezones/assets/sprites/player01 pateando.png" id="2_ymh67"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_gd8vl"]
@@ -28,8 +28,6 @@ radius = 179.0
 height = 764.0
 
 [node name="CharacterBody2D" type="CharacterBody2D"]
-position = Vector2(171, 312)
-scale = Vector2(0.315, 0.315)
 script = ExtResource("1_ka2n0")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]

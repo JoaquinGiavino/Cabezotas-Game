@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://da26qia1ngdpb"]
+
+[ext_resource type="Texture2D" uid="uid://b06pvb1b57smk" path="res://Cabezones/assets/sprites/Fondo Elegido.png" id="1_ivvw1"]
+
+[node name="StaticBody2D" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(577.5, 332)
+scale = Vector2(0.753255, 0.636719)
+texture = ExtResource("1_ivvw1")

@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://docygckde0ltd"]
+
+[ext_resource type="Texture2D" uid="uid://bewosvkev2342" path="res://Cabezones/assets/sprites/Estadio cibernético iluminado por neón.png" id="1_3w0hm"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(577.5, 332)
+scale = Vector2(0.753, 0.637)
+texture = ExtResource("1_3w0hm")

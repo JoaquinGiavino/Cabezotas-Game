@@ -19,15 +19,15 @@ func _physics_process(delta):
 	
 	# Movimiento horizontal (ahora continuo mientras se mantenga la tecla)
 	var horizontal_input = 0
-	if Input.is_action_pressed("move_right"):
+	if Input.is_action_pressed("p2move_right"):
 		horizontal_input = 1
-	if Input.is_action_pressed("move_left"):
+	if Input.is_action_pressed("p2move_left"):
 		horizontal_input = -1
 	
 	velocity.x = horizontal_input * speed
 	
 	# Salto (solo si está en el suelo)
-	if Input.is_action_just_pressed("move_up") and can_jump:
+	if Input.is_action_just_pressed("p2move_up") and can_jump:
 		velocity.y = jump_force
 		can_jump = false
 	
@@ -41,7 +41,7 @@ func _physics_process(delta):
 	if velocity.x != 0:
 		$AnimatedSprite2D.animation = "quiet"
 		$AnimatedSprite2D.flip_v = false
-		$AnimatedSprite2D.flip_h = velocity.x < 0  # Esto volteará el sprite cuando se mueva a la izquierda
+		$AnimatedSprite2D.flip_h = velocity.y < 0  # Esto volteará el sprite cuando se mueva a la izquierda
 		$AnimatedSprite2D.play()
 	elif velocity.y != 0:
 		$AnimatedSprite2D.animation = "quick"

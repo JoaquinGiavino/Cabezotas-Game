@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://nn7mwsrxrjik"]
+
+[ext_resource type="Texture2D" uid="uid://cgbn46ye57k0a" path="res://Cabezones/assets/sprites/Atardecer en el estadio de fútbol.png" id="1_fs6gb"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(577.5, 332)
+scale = Vector2(0.753, 0.637)
+texture = ExtResource("1_fs6gb")

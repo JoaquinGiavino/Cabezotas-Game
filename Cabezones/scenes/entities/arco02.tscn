@@ -1,23 +1,26 @@
 [gd_scene load_steps=4 format=3 uid="uid://d4d860sl5avyt"]
 
-[ext_resource type="Texture2D" uid="uid://cjcgy77eyv6bi" path="res://Cabezones/assets/sprites/klipartz.com ss.png" id="1_swjor"]
+[ext_resource type="Texture2D" uid="uid://cr7nqpjk7uw8q" path="res://Cabezones/assets/sprites/Arco de costado.png" id="1_swjor"]
 
 [sub_resource type="SegmentShape2D" id="SegmentShape2D_kbsc8"]
-a = Vector2(-68, -85)
+a = Vector2(-56, -102)
 b = Vector2(-16, -59)
 
 [sub_resource type="SegmentShape2D" id="SegmentShape2D_ao2ad"]
-a = Vector2(-16, -58)
-b = Vector2(46, 83)
+a = Vector2(-1, 13)
+b = Vector2(17, 69)
 
 [node name="StaticBody2D" type="StaticBody2D"]
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-scale = Vector2(0.022, 0.022)
+position = Vector2(-7.74999, -19.75)
+scale = Vector2(0.12, 0.127)
 texture = ExtResource("1_swjor")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(22, 36)
 shape = SubResource("SegmentShape2D_kbsc8")
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
+position = Vector2(2, -42)
 shape = SubResource("SegmentShape2D_ao2ad")

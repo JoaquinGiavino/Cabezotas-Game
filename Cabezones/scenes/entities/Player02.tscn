@@ -1,15 +1,40 @@
-[gd_scene load_steps=3 format=3 uid="uid://b8bykqe1npdau"]
+[gd_scene load_steps=6 format=3 uid="uid://b8bykqe1npdau"]
 
 [ext_resource type="Texture2D" uid="uid://bo6pnu5rqbi5t" path="res://Cabezones/assets/sprites/player02.png" id="1_84jcv"]
+[ext_resource type="Script" uid="uid://bkywjn8odo7f4" path="res://Cabezones/scripts/player_02.gd" id="1_cg1mt"]
+[ext_resource type="Texture2D" uid="uid://byt8fc1exbppm" path="res://Cabezones/assets/sprites/Messi pateando.PNG" id="2_m38kr"]
 
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_m0yd8"]
-radius = 368.0
-height = 1068.0
+[sub_resource type="SpriteFrames" id="SpriteFrames_0s38d"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_m38kr")
+}],
+"loop": true,
+"name": &"quick",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_84jcv")
+}],
+"loop": true,
+"name": &"quiet",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_f8aeb"]
+radius = 170.0
+height = 570.0
 
 [node name="CharacterBody2D" type="CharacterBody2D"]
+scale = Vector2(1.1, 1.1)
+script = ExtResource("1_cg1mt")
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
-texture = ExtResource("1_84jcv")
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+scale = Vector2(0.5, 0.5)
+sprite_frames = SubResource("SpriteFrames_0s38d")
+animation = &"quiet"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-shape = SubResource("CapsuleShape2D_m0yd8")
+shape = SubResource("CapsuleShape2D_f8aeb")
