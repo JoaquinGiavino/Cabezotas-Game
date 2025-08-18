@@ -3,7 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://fwoi34gq84bg" path="res://Cabezones/assets/sprites/suelo.png" id="1_oj3tl"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_cgngl"]
-size = Vector2(146.667, 25)
+size = Vector2(125, 25)
 
 [sub_resource type="SegmentShape2D" id="SegmentShape2D_mb258"]
 a = Vector2(0, -35)
@@ -20,13 +20,14 @@ scale = Vector2(0.08, 0.08)
 texture = ExtResource("1_oj3tl")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, 13)
+position = Vector2(-2, 13)
 scale = Vector2(0.8, 0.8)
 shape = SubResource("RectangleShape2D_cgngl")
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
-position = Vector2(58, -7)
+position = Vector2(46, -6)
 shape = SubResource("SegmentShape2D_mb258")
 
 [node name="CollisionShape2D4" type="CollisionShape2D" parent="."]
+position = Vector2(6.66667, 0)
 shape = SubResource("SegmentShape2D_yudxw")

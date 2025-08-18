@@ -1,40 +1,40 @@
 [gd_scene load_steps=8 format=3 uid="uid://bwxisoolfauoj"]
 
-[ext_resource type="PackedScene" uid="uid://docygckde0ltd" path="res://Cabezones/scenes/entities/background_cyberpunk.tscn" id="1_s3xyx"]
-[ext_resource type="PackedScene" uid="uid://gbsmlk4aro4q" path="res://Cabezones/scenes/entities/floor.tscn" id="2_21u5y"]
-[ext_resource type="PackedScene" uid="uid://c4vq5dw0ha2kw" path="res://Cabezones/scenes/entities/arco.tscn" id="3_qiv5g"]
-[ext_resource type="PackedScene" uid="uid://d4d860sl5avyt" path="res://Cabezones/scenes/entities/arco02.tscn" id="4_io0fy"]
-[ext_resource type="PackedScene" uid="uid://03t7scijjfpj" path="res://Cabezones/scenes/entities/player01.tscn" id="5_c0sou"]
-[ext_resource type="PackedScene" uid="uid://b8bykqe1npdau" path="res://Cabezones/scenes/entities/Player02.tscn" id="6_owcfy"]
-[ext_resource type="PackedScene" uid="uid://jepl7p4bjbp0" path="res://Cabezones/scenes/entities/Ball_.tscn" id="7_71n6r"]
+[ext_resource type="PackedScene" uid="uid://docygckde0ltd" path="res://Cabezones/scenes/entities/background_cyberpunk.tscn" id="1_s22nl"]
+[ext_resource type="PackedScene" uid="uid://gbsmlk4aro4q" path="res://Cabezones/scenes/entities/floor.tscn" id="2_wk4br"]
+[ext_resource type="PackedScene" uid="uid://c4vq5dw0ha2kw" path="res://Cabezones/scenes/entities/arco.tscn" id="3_0orly"]
+[ext_resource type="PackedScene" uid="uid://d4d860sl5avyt" path="res://Cabezones/scenes/entities/arco02.tscn" id="4_2txln"]
+[ext_resource type="PackedScene" uid="uid://03t7scijjfpj" path="res://Cabezones/scenes/entities/player01.tscn" id="5_oqf3h"]
+[ext_resource type="PackedScene" uid="uid://b8bykqe1npdau" path="res://Cabezones/scenes/entities/Player02.tscn" id="6_3bhyg"]
+[ext_resource type="PackedScene" uid="uid://jepl7p4bjbp0" path="res://Cabezones/scenes/entities/Ball_.tscn" id="7_frul2"]
 
 [node name="Node2D" type="Node2D"]
 
-[node name="Bg" parent="." instance=ExtResource("1_s3xyx")]
+[node name="Bg" parent="." instance=ExtResource("1_s22nl")]
 position = Vector2(-10, 3)
 
-[node name="Floor" parent="." instance=ExtResource("2_21u5y")]
+[node name="Floor" parent="." instance=ExtResource("2_wk4br")]
 visible = false
 position = Vector2(561, 465)
 scale = Vector2(10.101, 5.007)
 
-[node name="Arco" parent="." instance=ExtResource("3_qiv5g")]
+[node name="Arco" parent="." instance=ExtResource("3_0orly")]
 visible = false
 position = Vector2(-34, 587)
 scale = Vector2(0.13, 1)
 
-[node name="Arco 02" parent="." instance=ExtResource("4_io0fy")]
+[node name="Arco 02" parent="." instance=ExtResource("4_2txln")]
 visible = false
 position = Vector2(1026, 555)
 
-[node name="Player 01" parent="." instance=ExtResource("5_c0sou")]
+[node name="Player 01" parent="." instance=ExtResource("5_oqf3h")]
 position = Vector2(259, 383)
 scale = Vector2(0.19, 0.19)
 
-[node name="Player 02" parent="." instance=ExtResource("6_owcfy")]
+[node name="Player 02" parent="." instance=ExtResource("6_3bhyg")]
 position = Vector2(879, 383)
 scale = Vector2(0.25, 0.25)
 
-[node name="Ball" parent="." instance=ExtResource("7_71n6r")]
+[node name="Ball" parent="." instance=ExtResource("7_frul2")]
 position = Vector2(576, 20)
 collision_layer = 0

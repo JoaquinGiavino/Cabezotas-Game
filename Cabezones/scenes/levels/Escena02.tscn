@@ -15,7 +15,7 @@ position = Vector2(-10, 3)
 
 [node name="floor" parent="." instance=ExtResource("2_yccqm")]
 visible = false
-position = Vector2(561, 465)
+position = Vector2(594, 441)
 scale = Vector2(10.101, 5.007)
 
 [node name="Arco" parent="." instance=ExtResource("3_635if")]
@@ -28,7 +28,7 @@ visible = false
 position = Vector2(1026, 555)
 
 [node name="Player 01" parent="." instance=ExtResource("5_8x4ln")]
-position = Vector2(259, 383)
+position = Vector2(255, 391)
 scale = Vector2(0.19, 0.19)
 
 [node name="Player 02" parent="." instance=ExtResource("6_ur2du")]

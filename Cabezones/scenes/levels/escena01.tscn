@@ -1,40 +1,40 @@
 [gd_scene load_steps=8 format=3 uid="uid://dpfin7n41jmeh"]
 
-[ext_resource type="PackedScene" uid="uid://gbsmlk4aro4q" path="res://Cabezones/scenes/entities/floor.tscn" id="1_pl3a0"]
-[ext_resource type="PackedScene" uid="uid://03t7scijjfpj" path="res://Cabezones/scenes/entities/player01.tscn" id="2_7rixi"]
-[ext_resource type="PackedScene" uid="uid://c4vq5dw0ha2kw" path="res://Cabezones/scenes/entities/arco.tscn" id="5_l7ylj"]
-[ext_resource type="PackedScene" uid="uid://d4d860sl5avyt" path="res://Cabezones/scenes/entities/arco02.tscn" id="6_3kgtb"]
-[ext_resource type="PackedScene" uid="uid://b8bykqe1npdau" path="res://Cabezones/scenes/entities/Player02.tscn" id="6_pvn8g"]
-[ext_resource type="PackedScene" uid="uid://da26qia1ngdpb" path="res://Cabezones/scenes/entities/background.tscn" id="7_pvn8g"]
-[ext_resource type="PackedScene" uid="uid://jepl7p4bjbp0" path="res://Cabezones/scenes/entities/Ball_.tscn" id="7_rli3t"]
+[ext_resource type="PackedScene" uid="uid://da26qia1ngdpb" path="res://Cabezones/scenes/entities/background.tscn" id="1_xdkc7"]
+[ext_resource type="PackedScene" uid="uid://gbsmlk4aro4q" path="res://Cabezones/scenes/entities/floor.tscn" id="2_ha1c5"]
+[ext_resource type="PackedScene" uid="uid://c4vq5dw0ha2kw" path="res://Cabezones/scenes/entities/arco.tscn" id="3_3hhvj"]
+[ext_resource type="PackedScene" uid="uid://d4d860sl5avyt" path="res://Cabezones/scenes/entities/arco02.tscn" id="4_7ceni"]
+[ext_resource type="PackedScene" uid="uid://03t7scijjfpj" path="res://Cabezones/scenes/entities/player01.tscn" id="5_u5ia2"]
+[ext_resource type="PackedScene" uid="uid://b8bykqe1npdau" path="res://Cabezones/scenes/entities/Player02.tscn" id="6_ip2iq"]
+[ext_resource type="PackedScene" uid="uid://jepl7p4bjbp0" path="res://Cabezones/scenes/entities/Ball_.tscn" id="7_bbrru"]
 
 [node name="Node2D" type="Node2D"]
 
-[node name="bg" parent="." instance=ExtResource("7_pvn8g")]
+[node name="bg" parent="." instance=ExtResource("1_xdkc7")]
 position = Vector2(-10, 3)
 
-[node name="Floor" parent="." instance=ExtResource("1_pl3a0")]
+[node name="Floor" parent="." instance=ExtResource("2_ha1c5")]
 visible = false
 position = Vector2(561, 465)
 scale = Vector2(10.1008, 5.00678)
 
-[node name="Arco" parent="." instance=ExtResource("5_l7ylj")]
+[node name="Arco" parent="." instance=ExtResource("3_3hhvj")]
 visible = false
 position = Vector2(-34, 587)
 scale = Vector2(0.13, 0.13)
 
-[node name="Arco_02" parent="." instance=ExtResource("6_3kgtb")]
+[node name="Arco_02" parent="." instance=ExtResource("4_7ceni")]
 visible = false
 position = Vector2(1026, 555)
 
-[node name="Player_01" parent="." instance=ExtResource("2_7rixi")]
+[node name="Player_01" parent="." instance=ExtResource("5_u5ia2")]
 position = Vector2(259, 383)
 scale = Vector2(0.19, 0.19)
 
-[node name="Player_02" parent="." instance=ExtResource("6_pvn8g")]
+[node name="Player_02" parent="." instance=ExtResource("6_ip2iq")]
 position = Vector2(879, 383)
 scale = Vector2(0.25, 0.25)
 
-[node name="RigidBody2D" parent="." instance=ExtResource("7_rli3t")]
+[node name="RigidBody2D" parent="." instance=ExtResource("7_bbrru")]
 position = Vector2(576, 20.0002)
 collision_layer = 0

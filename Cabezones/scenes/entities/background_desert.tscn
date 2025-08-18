@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://bv0l8tgpu5e2p"]
+
+[ext_resource type="Texture2D" uid="uid://d3e1px6g7jv1m" path="res://Cabezones/assets/sprites/Campo de fútbol abandonado al atardecer.png" id="1_c8ius"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(577.5, 332)
+scale = Vector2(0.753, 0.637)
+texture = ExtResource("1_c8ius")
